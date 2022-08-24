@@ -10,6 +10,7 @@ import java.util.HashMap;
  * @author Ayub
  */
 public class HashMapNums {
+    //This program finds the indexes of two numbers that add up to the given target.
     
     public static void main(String[] args){
         int[] nums = {2,8,4,7,3,6};
@@ -20,9 +21,9 @@ public class HashMapNums {
         for (int index = 0; index < nums.length; index++){
             int temp = target - nums[index];
             if(map.containsKey(temp)){
-                System.out.println(index);
+                
                 System.out.println(map.get(temp) + "," + index);
-                System.out.println("test");
+                
             }
             map.put(nums[index], index);
         }
